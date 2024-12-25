@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+  <title>Ingresar Noticia</title>
+  <link rel="stylesheet" href="css/sty.css"> </head>
+<body>
+  <h2>Ingresar Nueva Noticia</h2>
+  <form action="not.php" method="post" enctype="multipart/form-data">
+    <label for="titulo">Título:</label><br>
+    <input type="text" id="titulo" name="titulo" required><br><br>
+
+    <label for="fecha">Fecha:</label><br>
+    <input type="date" id="fecha" name="fecha" required><br><br>
+
+    <label for="descripcion">Descripción:</label><br>
+    <textarea id="descripcion" name="descripcion" rows="5" required></textarea><br><br>
+
+    <label for="imagen">Imagen:</label><br>
+    <input type="file" id="imagen" name="imagen" accept="image/*" required><br><br>
+
+    <input type="submit" value="Guardar Noticia"> <a href="index.php" class="btn btn-secondary ml-2">Salir</a>
+  </form>
+</body>
+</html>
